@@ -1,0 +1,9 @@
+[project]
+name = "fledge-hello-swift"
+language = "swift"
+
+[tasks]
+build = "swift build -c release"
+dev = "swift build"
+test = "swift build"
+clean = "swift package clean"
