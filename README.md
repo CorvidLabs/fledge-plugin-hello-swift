@@ -1,6 +1,14 @@
-# fledge-hello-swift
+# fledge-plugin-hello-swift
 
-Example fledge plugin written in Swift, demonstrating the **fledge-v1** protocol. Exercises every message type in a single interactive walkthrough.
+**Reference implementation** for writing fledge plugins in Swift.
+
+This plugin demonstrates the complete **fledge-v1** protocol by exercising every message type in a single interactive walkthrough. Use it as a starting point when building your own Swift-based fledge plugins.
+
+[![CI](https://github.com/CorvidLabs/fledge-plugin-hello-swift/actions/workflows/ci.yml/badge.svg)](https://github.com/CorvidLabs/fledge-plugin-hello-swift/actions/workflows/ci.yml)
+
+## Why Swift?
+
+Swift is a natural fit for fledge plugins on macOS: zero external dependencies (Foundation handles JSON), fast compile times, and first-class structured concurrency. This reference implementation shows you can build a fully-featured plugin with just the standard library.
 
 ## Message types demonstrated
 
@@ -33,7 +41,7 @@ fledge run build
 ## Installing
 
 ```bash
-fledge plugin install ./path/to/fledge-hello-swift
+fledge plugins install CorvidLabs/fledge-plugin-hello-swift
 fledge hello-swift
 ```
 
@@ -47,8 +55,26 @@ echo '{"type":"init","protocol":"fledge-v1","args":[],"project":null,"plugin":{"
 
 ## Writing your own plugin in Swift
 
-1. Create a Swift package with no external dependencies (Foundation is enough)
-2. Define Codable types for each message you need
+This repo is designed to be cloned and modified. Here is the pattern:
+
+1. Create a Swift package with no external dependencies (Foundation is enough for JSON)
+2. Define `Codable` types for each message you need (see `Sources/main.swift`)
 3. Read JSON lines from stdin, write JSON lines to stdout
 4. Use stderr for debug output (fledge never captures it)
-5. Add a `plugin.toml` with `protocol = "fledge-v1"`
+5. Add a `plugin.toml` with `protocol = "fledge-v1"` and a `[[commands]]` entry pointing to your binary
+6. Publish to GitHub as `your-org/fledge-plugin-{name}` so users can install with `fledge plugins install`
+
+## Project structure
+
+```
+.
+├── Package.swift       # Swift package manifest (macOS 13+, Swift 5.9+)
+├── Sources/
+│   └── main.swift      # Plugin entry point — all protocol handling
+├── plugin.toml         # Fledge plugin manifest
+└── fledge.toml         # Fledge task definitions (build/dev/test/clean)
+```
+
+## License
+
+MIT
