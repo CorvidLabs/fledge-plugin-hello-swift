@@ -7,3 +7,8 @@ build = "swift build -c release"
 dev = "swift build"
 test = "swift build"
 clean = "swift package clean"
+manifest = "grep -q 'protocol = \"fledge-v1\"' plugin.toml && grep -q 'binary = \".build/release/fledge-hello-swift\"' plugin.toml"
+
+[lanes.verify]
+description = "Build and validate the Swift fledge-v1 reference plugin"
+steps = ["test", "build", "manifest"]

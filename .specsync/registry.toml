@@ -1,0 +1,5 @@
+[registry]
+name = "fledge-plugin-hello-swift-trust-wave5"
+
+[specs]
+hello-swift = "specs/hello-swift/hello-swift.spec.md"
