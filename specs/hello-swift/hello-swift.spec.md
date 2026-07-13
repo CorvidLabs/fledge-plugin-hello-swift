@@ -1,6 +1,6 @@
 ---
 module: hello-swift
-version: 1
+version: 2
 status: active
 files:
   - Sources/main.swift
@@ -57,3 +57,4 @@ Then it demonstrates logging, output, prompts, selection, progress, storage, exe
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Document the existing Swift fledge-v1 reference behavior for SpecSync 5 adoption. |
+| 2026-07-13 | CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-swift-hello-fledge-plugi: Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Swift Hello Fledge plugin |
