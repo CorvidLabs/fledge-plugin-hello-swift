@@ -1,9 +1,224 @@
 {
-  "timestamp": 1783954481,
-  "commit": "ede9e278d10196752edd635a1b42c2145b1d3b70",
+  "timestamp": 1784412185,
+  "commit": "40602796c5baa8b479c00710e6513ce293d69e54",
   "contract_digest": "f61585e725c81fdff1180f72983ad6390125dd28a3cfcd93a0aa33a39e045553",
-  "workspace_digest": "9ece5091e3fd8cd0ae918c287e26912e14472fc95fc67adcab80f69ad672c8d4",
-  "acceptance_input_digest": "1cfb61b6e04ab54f8f4e9d89cb159b4ec4baebb6725f10855304958c2a6d9b62",
+  "workspace_digest": "0a388c77ea7e0caf046734cef2b34a9eb36c425d269821bdbd3550a4ca9e83bb",
+  "acceptance_input_digest": "4b4ecdf95dae777c5cd640d7f34a169816d3ad798b55f65c4cb5439510a8bf0d",
+  "acceptance_manifest": {
+    "schema_version": 1,
+    "entries": [
+      {
+        "path": ".attest.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "2581fe52873327db0bbac357a5102a0dbb18a1eea5a690b7b75eaa571e50cf65",
+        "entry_digest": "2904a18e18582f191a1d359d16e7bc61a7596ac77f62e55a94de56b3da8c796e",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".augur.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "17f6ad5b84b4db012f0e3f398a96a478c1324fd47e72e1dd2a13c7cf9a432983",
+        "entry_digest": "bac13c952da05292bdd0af5849aad9d9def3ae5afc830fa42b6914b2fd874beb",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "d2df648228fe8742b9e702e97c97ea4869f0f58b5ca8e1c1de74b4191793189f",
+        "entry_digest": "f65d9a709f94fdf1f918202866cf1b338fd9fe6f32d9a7e3cb80baa4047946a1",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/workflows/trust.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "668712c774f508b14a475964090af8854a9949636e0a0502d33897f48ed29e23",
+        "entry_digest": "b03cb6d4341280cf9180e145f01bfcb20fbe1ca686a0f97b9bc3a25ccafe16b7",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/.gitignore",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "a505253bd2fdfb84f8121e89e48bbc67144082b5a88f439ee6acfb45424799b0",
+        "entry_digest": "ec3b8bd021ac6ac36ddfba3d0d6b84535be8074b917e9bffa050216e422d1792",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/adoption-report.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "c6db810ec448c91ce735dbc6656a69cd8b882ad2f337c6b214b45dbbc4597968",
+        "entry_digest": "10d94b0d680568003b7b0a4b4897690c1de45334460af268e669daf72818598f",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/config.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "73de5bc8fdc419a5cd499845e040e3ec687f0ed7eb1dcbaa0777e0caf204e883",
+        "entry_digest": "5ebdc88fc9417e9faf562ad7da3c042f99e8b2808cdf50d99790df44abdfa02f",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/registry.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "aeaa02ba29d1d8c552b082841d68bd5368861092b2e9a33aced47a061def74fa",
+        "entry_digest": "b23c85e7c953d1f1d40805af2a398d32ca2b4347efe575ae2e9aa9772a872a0d",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/sdd.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "567f8c2e5e190f2cad0a1554ba00d70cd7358e419b845bf0dcfa9ae5467e4060",
+        "entry_digest": "7ccfaaec4d72ff8da2883ee3187afb0be79ed60b8e89e5795e4e2f214336d670",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/version",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "23b6867924dfeb9cf532753438dc919669bf93ad88215e11c15630a4acbf4299",
+        "entry_digest": "339b5f88be30302336707baa5dab61fd4b324d04e495d3bb772cf893fb4f73bc",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".trust.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "a730d2be8ac27e354628d06f82b57bf0a0951d805175bbf5fd8f37b8e3dd04be",
+        "entry_digest": "630a7ed94e4d4add912b78b1ec6e4714bee1b428c587c8c6678e239cec738d32",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "AGENTS.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "d2561f21b1519604865b1ae0c4a6586f5f2bea591c9b3b7d8c4ae0f274b73df5",
+        "entry_digest": "616b86acb3d91a5f9880826f4063978e95d46397de849b7566f3688823302e01",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Package.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "31740336fc1444953705884b33ff765abc0ecd88296ac9c937cdc9765f333910",
+        "entry_digest": "e19c75000150c1871be999eebe7d543be7152a4242fa97547012471ffb691aec",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Sources/main.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "32035bc797401b40eb8740bcf373ef48f49d3ea0cd320f7824446ed4e28554a6",
+        "entry_digest": "ff5ba6b0e45f8f16c3da4de28bee0f5f80151ba507b98f5abd69dd8eeb866e97",
+        "owners": [
+          "hello-swift"
+        ]
+      },
+      {
+        "path": "fledge.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "5c29a41b8be6134e52eac4d846615dba632cb605c927a3bbcadb04adb29c860d",
+        "entry_digest": "0b8af6df332a8f96bb062291cf5fadf7bed1b43dc0455333ab209d77fce040c5",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "plugin.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "5d8b273d00d5d255c7073d20a7df125ba573e26b25fa3f6cf30fda276b8b35f1",
+        "entry_digest": "306f174a6a09f7bfec5a865510a29468c3e68125e1cf270ee8abfe0d0f4951dc",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "specs/hello-swift/context.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "28c0b9016c1c7b2e264a833203f80dab05b8831a8ddfe273c481ef75445f4df6",
+        "entry_digest": "53f495b87318ec305b3af1f1775fef1f855c9320ca35d1dca3084a0766a46a0a",
+        "owners": [
+          "hello-swift"
+        ]
+      },
+      {
+        "path": "specs/hello-swift/hello-swift.spec.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "8e5f7ef9f86645f67379751ecf9fcebf57d3b1c1a8eec6e48cf57077c7c31a8b",
+        "entry_digest": "aa5946ee43009da1187732b8c159e91e70602906b61c467b5bae0b462b5adb41",
+        "owners": [
+          "hello-swift"
+        ]
+      },
+      {
+        "path": "specs/hello-swift/requirements.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "8d2294033775afacdc1df3ce1de9bd690d0727c2b25c0d3fb4f2b0db5b8a2843",
+        "entry_digest": "697a433656ae4274ab124f8820b87d175cc54a906b018b9d1befd6c4a4096104",
+        "owners": [
+          "hello-swift"
+        ]
+      },
+      {
+        "path": "specs/hello-swift/tasks.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "83fd1ae5a4bd61ce839cfe32218e4bc37f8447c781a7603f583dacbb4ac9db7a",
+        "entry_digest": "cba20e407e3177a883ed65c8779f8cb9bc977ba4ae04250f6903c577b62e2709",
+        "owners": [
+          "hello-swift"
+        ]
+      },
+      {
+        "path": "specs/hello-swift/testing.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "307683d06ec30508f74903160f842a29bf851cf0772bc280df644b66b49ad1c5",
+        "entry_digest": "f10d8b29c93e198f87e0773f60b1f1f6488c2f693725f9b375ccac55495c4c7e",
+        "owners": [
+          "hello-swift"
+        ]
+      }
+    ]
+  },
   "passed": true,
   "commands": [
     {

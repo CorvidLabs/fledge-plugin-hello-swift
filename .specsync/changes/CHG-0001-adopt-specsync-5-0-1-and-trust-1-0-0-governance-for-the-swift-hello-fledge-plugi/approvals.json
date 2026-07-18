@@ -13,6 +13,54 @@
       "timestamp": 1783954518,
       "digest": "cc9b93b360f9134c9fe428355046799461a5ade1b230310d2194d14c086f17b4",
       "note": "Closing approval recorded after successful committed-head native verification with explicit requirement evidence."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784412227,
+      "digest": "2b8ad5d86c7cffffc7593fbd492cf142af617deca9f0af06a37c854adf018e83",
+      "note": "Re-acceptance with the Trust consumer pin at the released v1.1.1 immutable commit; canonical deltas were already integrated and were not replayed."
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-swift-hello-fledge-plugi",
+      "actor": "user:0xLeif",
+      "reason": "Trust consumer pin moves to the released v1.1.1 immutable commit; the Trust workflow is a governed delivery input of this change, so accepted verification is stale.",
+      "timestamp": 1784412110,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783954518,
+        "digest": "cc9b93b360f9134c9fe428355046799461a5ade1b230310d2194d14c086f17b4",
+        "note": "Closing approval recorded after successful committed-head native verification with explicit requirement evidence."
+      },
+      "prior_verification": {
+        "timestamp": 1783954481,
+        "commit": "ede9e278d10196752edd635a1b42c2145b1d3b70",
+        "contract_digest": "f61585e725c81fdff1180f72983ad6390125dd28a3cfcd93a0aa33a39e045553",
+        "workspace_digest": "9ece5091e3fd8cd0ae918c287e26912e14472fc95fc67adcab80f69ad672c8d4",
+        "acceptance_input_digest": "1cfb61b6e04ab54f8f4e9d89cb159b4ec4baebb6725f10855304958c2a6d9b62",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-hello-swift-001",
+          "REQ-hello-swift-002",
+          "REQ-hello-swift-003",
+          "REQ-hello-swift-004"
+        ]
+      },
+      "stale_acceptance_input_digest": "1cfb61b6e04ab54f8f4e9d89cb159b4ec4baebb6725f10855304958c2a6d9b62",
+      "current_acceptance_input_digest": "930bf0b67888f90e0bf1e623bd55a8dfd4f75b6dcf9d312c381b8287d93f21ba"
     }
   ]
 }
