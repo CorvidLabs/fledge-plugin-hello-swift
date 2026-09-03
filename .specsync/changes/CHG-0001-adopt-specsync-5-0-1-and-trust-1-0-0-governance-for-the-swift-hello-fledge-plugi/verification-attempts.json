@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "attempts": [
+    {
+      "timestamp": 1784412185,
+      "commit": "40602796c5baa8b479c00710e6513ce293d69e54",
+      "contract_digest": "f61585e725c81fdff1180f72983ad6390125dd28a3cfcd93a0aa33a39e045553",
+      "workspace_digest": "0a388c77ea7e0caf046734cef2b34a9eb36c425d269821bdbd3550a4ca9e83bb",
+      "passed": true,
+      "commands": [
+        {
+          "command": "fledge lanes run verify",
+          "success": true,
+          "exit_code": 0
+        }
+      ],
+      "requirement_ids": [
+        "REQ-hello-swift-001",
+        "REQ-hello-swift-002",
+        "REQ-hello-swift-003",
+        "REQ-hello-swift-004"
+      ]
+    }
+  ]
+}
